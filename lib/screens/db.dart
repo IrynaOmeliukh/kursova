@@ -81,7 +81,7 @@ class _DatabaseState extends State<Database> {
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               TextField(
                 controller: _titleController,
@@ -160,7 +160,9 @@ class _DatabaseState extends State<Database> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Kindacode.com'),
+        title: const Text('Places'),
+        centerTitle: true,
+        backgroundColor: Colors.teal,
       ),
       body: _isLoading
           ? const Center(
